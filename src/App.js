@@ -10,26 +10,6 @@ function App() {
 
   const web3 = new Web3(Web3.givenProvider);
 
-  // useEffect(() => {
-  //   loadAccout();
-  // }, [])
-
-  // useEffect(() => {
-  //   loadBalance();
-  // }, [account])
-
-  // async function loadAccout(){
-  //   const accounts = await web3.eth.requestAccounts();
-  //   setAccount(accounts[0]);
-  // }
-
-  // async function loadBalance(){
-  //   const network = await web3.eth.getNetworkType();
-  //   const balance = await web3.eth.getBalance(account);
-  //   setNetwork(network);
-  //   setBalance(balance);
-  // }
-
   useEffect(() => {
     loadAccout();
   }, [])
